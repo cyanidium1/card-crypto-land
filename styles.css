@@ -2376,3 +2376,73 @@ body .center .pieces .blank {
     transform: scale(1);
   }
 }
+
+/* Стили для кнопки */
+button.pulse {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: none;
+  border: 2px solid #ef6eae;
+  color: #ef6eae;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+  padding: 1.2em 0em;
+  width: calc(100% - 24px);
+  max-width: 600px;
+  white-space: nowrap;
+  transition: 0.25s;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+button.pulse:hover,
+button.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
+  color: #fff;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #ef6eae;
+  }
+}
+
+/* Стили для заголовка */
+.header {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1000;
+  width: calc(100% - 24px);
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(45deg, #ef6eae, #55e2f9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.header p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  margin: 0;
+  opacity: 0.9;
+}
