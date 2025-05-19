@@ -2380,7 +2380,7 @@ body .center .pieces .blank {
 /* Стили для кнопки */
 button.pulse {
   position: fixed;
-  bottom: 12px;
+  bottom: 72px;
   left: 50%;
   transform: translateX(-50%);
   background: none;
