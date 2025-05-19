@@ -2380,7 +2380,7 @@ body .center .pieces .blank {
 /* Стили для кнопки */
 button.pulse {
   position: fixed;
-  bottom: 50px;
+  bottom: 12px;
   left: 50%;
   transform: translateX(-50%);
   background: none;
@@ -2399,6 +2399,7 @@ button.pulse {
   cursor: pointer;
   text-transform: uppercase;
   box-sizing: border-box;
+  z-index: 1000;
 }
 
 button.pulse:hover,
